@@ -1,0 +1,27 @@
+#!/usr/bin/expect
+
+set timeout 3
+
+set username [lindex $argv 0]
+set password [lindex $argv 1]
+set config [lindex $argv 2]
+
+spawn openvpn --config $config
+expect "Enter Auth Username:"
+send "$username\r"
+expect "Enter Auth Password:"
+send "$password\r"
+expect {
+    "Initialization Sequence Completed" {
+        puts "Success: $password"
+        exit 0
+    }
+    "AUTH_FAILED" {
+        puts "Failed: $password"
+        exit 1
+    }
+    timeout {
+        puts "Timeout: $password"
+        exit 1
+    }
+}

@@ -35,7 +35,7 @@ Nous accueillons les contributions qui améliorent ou enrichissent les ressource
 
 ## Contact
 
-Si vous avez des questions ou des préoccupations concernant l'utilisation des outils et des ressources, veuillez nous contacter à l'adresse suivante : [votre email].
+Si vous avez des questions ou des préoccupations concernant l'utilisation des outils et des ressources, veuillez nous contacter à l'adresse suivante : maxence.haegman@student.junia.com.
 
 Merci d'avoir choisi d'utiliser nos outils éducatifs. Nous espérons qu'ils vous seront utiles dans votre parcours académique.
 
